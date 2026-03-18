@@ -26,7 +26,7 @@ const itemVariants: Variants = {
 const badges = [
   { label: "Energía solar", icon: SunMedium },
   { label: "Bombeo solar", icon: Droplets },
-  { label: "Soporte técnico", icon: Wrench },
+  { label: "Continuidad operativa", icon: Wrench }, // 🔥 mejorado
 ];
 
 export default function Hero() {
@@ -53,29 +53,22 @@ export default function Hero() {
           className="grid w-full items-end gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10"
         >
           <div className="max-w-4xl">
-            <motion.span
-              variants={itemVariants}
-              className="eyebrow border-white/14 bg-white/8 text-white before:bg-[linear-gradient(135deg,#ffd38a,#47c3cb)]"
-            >
-              Ingeniería energética premium
-            </motion.span>
-
-            <motion.h1
-              variants={itemVariants}
-              className="mt-6 max-w-5xl text-[clamp(3.2rem,14vw,8rem)] leading-[0.9] tracking-[-0.065em] text-white sm:mt-8"
-            >
-              Energía que
-              <br />
-              transforma tu mundo
-            </motion.h1>
-
+           <motion.h1
+  variants={itemVariants}
+  className="mt-6 max-w-5xl text-[clamp(3.2rem,14vw,8rem)] leading-[0.9] tracking-[-0.065em] text-white sm:mt-8"
+>
+  Energía inteligente,
+  <br />
+  <span className="text-[color:var(--solarys-gold-soft)]">
+    sin interrupciones
+  </span>
+</motion.h1>
             <motion.p
               variants={itemVariants}
               className="mt-5 max-w-2xl text-base leading-7 text-white/78 sm:mt-6 sm:text-lg sm:leading-8 md:text-xl"
             >
-              SOLARYS Ingeniería diseña soluciones solares, sistemas de bombeo y
-              respaldo electromecánico con una ejecución técnica impecable, imagen
-              corporativa sólida y soporte confiable.
+              Sistemas solares, bombeo y soluciones técnicas diseñadas para hogares,
+              negocios y proyectos que necesitan estabilidad real.
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-7 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
@@ -103,15 +96,15 @@ export default function Hero() {
                 href="/proyectos"
                 className="inline-flex items-center justify-center rounded-full border border-white/14 bg-white/8 px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white backdrop-blur-sm hover:-translate-y-0.5 hover:bg-white/12 sm:px-7 sm:text-sm sm:tracking-[0.18em]"
               >
-                Ver proyectos
+                Ver soluciones reales
               </Link>
             </motion.div>
 
             <motion.div variants={itemVariants} className="mt-10 grid max-w-3xl gap-3 sm:mt-12 sm:gap-4 sm:grid-cols-3">
               {[
                 { value: "25+", label: "años de vida útil proyectada" },
-                { value: "0", label: "emisión de CO₂ en operación" },
-                { value: "24/7", label: "respuesta técnica para incidencias" },
+                { value: "0", label: "emisiones durante operación" },
+                { value: "24/7", label: "respuesta técnica continua" },
               ].map((metric) => (
                 <div
                   key={metric.label}
@@ -142,14 +135,14 @@ export default function Hero() {
                     SOLARYS Ingeniería
                   </p>
                   <p className="mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Energía solar y bombeo con una presencia más alta.
+                    Energía confiable para lo que más importa.
                   </p>
                 </div>
               </div>
 
               <p className="mt-4 text-sm leading-6 text-white/72 sm:mt-5 sm:leading-7">
-                Quitamos el collage de imágenes del hero para dejar una experiencia más
-                limpia, elegante y cinematográfica, apoyada en el video completo de marca.
+                Diseñamos soluciones solares y sistemas técnicos que garantizan
+                continuidad, ahorro y estabilidad en cada proyecto.
               </p>
             </div>
           </motion.div>

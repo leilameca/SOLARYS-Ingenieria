@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "SOLARYS Ingeniería | Energía Solar y Bombeo con Identidad Premium",
+  title: "SOLARYS Ingeniería | Energía Solar y Bombeo",
   description:
-    "SOLARYS Ingeniería diseña, instala y respalda proyectos de energía solar, bombeo solar y electromecánica con enfoque técnico, presencia corporativa y soporte permanente en República Dominicana.",
+    "SOLARYS Ingeniería diseña, instala y respalda proyectos de energía solar, bombeo solar y electromecánica con enfoque técnico.",
 };
 
 export default function RootLayout({

@@ -14,10 +14,10 @@
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.27.5",
     "lucide-react": "^0.562.0",
-    "next": "16.1.4",
+    "next": "^16.1.4",
     "next-sanity": "^12.0.14",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
