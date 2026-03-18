@@ -1,3 +1,5 @@
+import { assetPath } from "../lib/asset-path";
+
 export type ProjectCategory = "solar" | "bombeo" | "electromecanica";
 
 export type Project = {
@@ -16,7 +18,7 @@ export const projects: Project[] = [
     category: "solar",
     location: "República Dominicana",
     equipos: "Inversor Solis / Estructura / Protecciones",
-    image: "/projects/demo-1.jpg",
+    image: assetPath("/projects/demo-1.jpg"),
   },
   {
     id: "p2",
@@ -24,7 +26,7 @@ export const projects: Project[] = [
     category: "bombeo",
     location: "Zona rural (RD)",
     equipos: "Bomba sumergible / Controlador / IP68",
-    image: "/projects/demo-2.jpg",
+    image: assetPath("/projects/demo-2.jpg"),
   },
   {
     id: "p3",
@@ -32,7 +34,7 @@ export const projects: Project[] = [
     category: "electromecanica",
     location: "Nave Industrial (RD)",
     equipos: "Tableros / Capacitores / ATS",
-    image: "/projects/demo-3.jpg",
+    image: assetPath("/projects/demo-3.jpg"),
   },
   {
     id: "p4",
@@ -40,7 +42,7 @@ export const projects: Project[] = [
     category: "solar",
     location: "Santo Domingo, RD",
     equipos: "Inversor híbrido / Baterías / Protecciones",
-    image: "/projects/demo-1.jpg",
+    image: assetPath("/projects/demo-1.jpg"),
   },
   {
     id: "p5",
@@ -48,7 +50,7 @@ export const projects: Project[] = [
     category: "bombeo",
     location: "RD",
     equipos: "Controlador / Paneles / Protección IP",
-    image: "/projects/demo-2.jpg",
+    image: assetPath("/projects/demo-2.jpg"),
   },
   {
     id: "p6",
@@ -56,6 +58,6 @@ export const projects: Project[] = [
     category: "electromecanica",
     location: "RD",
     equipos: "ATS / Tablero / Protecciones",
-    image: "/projects/demo-3.jpg",
+    image: assetPath("/projects/demo-3.jpg"),
   },
 ];

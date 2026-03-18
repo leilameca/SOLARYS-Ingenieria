@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { ArrowRight, Droplets, SunMedium, Wrench } from "lucide-react";
+import { assetPath } from "../lib/asset-path";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -34,7 +35,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <video
           className="h-full w-full object-cover"
-          src="/hero/hero.mp4"
+          src={assetPath("/hero/Hero.mp4")}
           autoPlay
           muted
           loop
@@ -130,7 +131,7 @@ export default function Hero() {
               <div className="flex items-start gap-3 sm:items-center sm:gap-4">
                 <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl bg-white/90 sm:h-16 sm:w-16">
                   <Image
-                    src="/brand/logo.png"
+                    src={assetPath("/brand/logo.png")}
                     alt="Logo de SOLARYS Ingeniería"
                     fill
                     className="object-contain p-2"

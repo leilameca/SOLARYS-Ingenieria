@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Servicios from "../components/Servicios";
 import RecursosTecnicos from "../components/RecursosTecnicos";
 import ProyectosDestacados from "../components/ProyectosDestacados";
+import { assetPath } from "../lib/asset-path";
 
 const pillars = [
   "Una estética más limpia, moderna y ejecutiva.",
@@ -20,9 +21,9 @@ const process = [
 ];
 
 const partners = [
-  { name: "Solis", logo: "/partners/solis.png" },
-  { name: "LuxPower", logo: "/partners/luxpower.png" },
-  { name: "Floxess", logo: "/partners/floxess.png" },
+  { name: "Solis", logo: assetPath("/partners/solis.png") },
+  { name: "LuxPower", logo: assetPath("/partners/luxpower.png") },
+  { name: "Floxess", logo: assetPath("/partners/floxess.png") },
 ];
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
             <div className="grid gap-5 md:grid-cols-[1.08fr_0.92fr]">
               <div className="relative overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
                 <Image
-                  src="/projects/demo-1.jpg"
+                  src={assetPath("/projects/demo-1.jpg")}
                   alt="Instalación solar a escala industrial"
                   width={900}
                   height={1100}
@@ -89,7 +90,7 @@ export default function Home() {
 
                 <div className="overflow-hidden rounded-[26px] border border-white/70 shadow-[0_24px_70px_rgba(36,59,113,0.14)] sm:rounded-[30px]">
                   <Image
-                    src="/projects/demo-2.jpg"
+                    src={assetPath("/projects/demo-2.jpg")}
                     alt="Proyecto de bombeo solar"
                     width={500}
                     height={500}
@@ -141,7 +142,7 @@ export default function Home() {
             <div className="grid gap-5">
               <div className="overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
                 <Image
-                  src="/projects/demo-3.jpg"
+                  src={assetPath("/projects/demo-3.jpg")}
                   alt="Instalación solar sobre cubierta"
                   width={900}
                   height={700}
@@ -180,7 +181,7 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr]">
             <div className="overflow-hidden rounded-[30px] shadow-[0_28px_80px_rgba(36,59,113,0.18)] sm:rounded-[38px]">
               <Image
-                src="/projects/demo-2.jpg"
+                src={assetPath("/projects/demo-2.jpg")}
                 alt="Vista aérea de proyecto productivo con energía solar"
                 width={1000}
                 height={1200}

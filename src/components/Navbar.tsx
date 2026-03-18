@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, PhoneCall, X } from "lucide-react";
 import { useState } from "react";
+import { assetPath } from "../lib/asset-path";
 
 const navLinks = [
   { href: "/#identidad", label: "Identidad" },
@@ -22,7 +23,7 @@ export default function Navbar() {
           <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" onClick={() => setOpen(false)}>
             <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-2xl bg-white shadow-lg shadow-cyan-100/60 ring-1 ring-cyan-100 sm:h-12 sm:w-12">
               <Image
-                src="/brand/logo.png"
+                src={assetPath("/brand/logo.png")}
                 alt="SOLARYS Ingenieria"
                 fill
                 className="object-contain p-1.5"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { assetPath } from "../lib/asset-path";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
             <div className="flex items-start gap-4 sm:items-center">
               <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl bg-white shadow-lg shadow-cyan-950/20 sm:h-16 sm:w-16">
                 <Image
-                  src="/brand/logo.png"
+                  src={assetPath("/brand/logo.png")}
                   alt="Logo de SOLARYS Ingeniería"
                   fill
                   className="object-contain p-2"

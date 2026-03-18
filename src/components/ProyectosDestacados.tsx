@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { assetPath } from "../lib/asset-path";
 
 const proyectos = [
   {
@@ -8,21 +9,21 @@ const proyectos = [
     type: "Solar fotovoltaica",
     location: "Republica Dominicana",
     equipos: "Inversor Solis / estructura / protecciones",
-    image: "/projects/demo-1.jpg",
+    image: assetPath("/projects/demo-1.jpg"),
   },
   {
     title: "Sistema de bombeo solar para agroindustria",
     type: "Bombeo solar",
     location: "Zona rural, RD",
     equipos: "Bomba sumergible / controlador / IP68",
-    image: "/projects/demo-2.jpg",
+    image: assetPath("/projects/demo-2.jpg"),
   },
   {
     title: "Mantenimiento electromecanico industrial",
     type: "Electromecanica",
     location: "Nave industrial, RD",
     equipos: "Tableros / capacitores / ATS",
-    image: "/projects/demo-3.jpg",
+    image: assetPath("/projects/demo-3.jpg"),
   },
 ];
 

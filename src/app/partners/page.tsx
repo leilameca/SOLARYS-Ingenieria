@@ -1,23 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Orbit } from "lucide-react";
+import { assetPath } from "../../lib/asset-path";
 
 const partners = [
   {
     name: "Solis",
-    logo: "/partners/solis.png",
+    logo: assetPath("/partners/solis.png"),
     description:
       "Inversionistas y soluciones fotovoltaicas con reconocimiento internacional para entornos exigentes.",
   },
   {
     name: "LuxPower",
-    logo: "/partners/luxpower.png",
+    logo: assetPath("/partners/luxpower.png"),
     description:
       "Arquitecturas hibridas y gestion inteligente de energia para proyectos con foco en flexibilidad.",
   },
   {
     name: "Floxess",
-    logo: "/partners/floxess.png",
+    logo: assetPath("/partners/floxess.png"),
     description:
       "Soporte para componentes y ecosistemas que refuerzan el desempeno integral de la instalacion.",
   },
