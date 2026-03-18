@@ -1,0 +1,280 @@
+import Image from "next/image";
+import Link from "next/link";
+import { CheckCircle2, Gauge, Headphones, ShieldCheck, SunMedium } from "lucide-react";
+import Hero from "../components/Hero";
+import Servicios from "../components/Servicios";
+import RecursosTecnicos from "../components/RecursosTecnicos";
+import ProyectosDestacados from "../components/ProyectosDestacados";
+
+const pillars = [
+  "Una estética más limpia, moderna y ejecutiva.",
+  "Presencia visual respaldada por imágenes reales del trabajo.",
+  "Mensajes comerciales claros sin perder profundidad técnica.",
+];
+
+const process = [
+  "Levantamiento y análisis técnico del proyecto.",
+  "Diseño de solución y propuesta comercial clara.",
+  "Instalación, puesta en marcha y acompañamiento.",
+  "Soporte y mantenimiento con respuesta confiable.",
+];
+
+const partners = [
+  { name: "Solis", logo: "/partners/solis.png" },
+  { name: "LuxPower", logo: "/partners/luxpower.png" },
+  { name: "Floxess", logo: "/partners/floxess.png" },
+];
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+
+      <section id="identidad" className="pt-16 sm:pt-20 lg:pt-24">
+        <div className="section-shell">
+          <div className="grid gap-8 lg:grid-cols-[0.94fr_1.06fr]">
+            <div className="lux-card rounded-[30px] p-6 sm:rounded-[36px] sm:p-8 md:p-10">
+              <span className="eyebrow">Dirección visual</span>
+              <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
+                Profesional, moderna y elegante, sin perder fuerza visual.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-[color:var(--solarys-ink)]/74 sm:mt-6 sm:text-lg sm:leading-8">
+                La nueva portada deja atrás la sensación de flyer y entra en un lenguaje
+                más editorial: video hero, fotografía aplicada con intención y una marca
+                que comunica valor desde la composición.
+              </p>
+
+              <div className="mt-7 space-y-3 sm:mt-8 sm:space-y-4">
+                {pillars.map((pillar) => (
+                  <div
+                    key={pillar}
+                    className="flex items-start gap-3 rounded-[20px] border border-[color:var(--solarys-deep)]/8 bg-[color:var(--solarys-light)] px-4 py-4 sm:rounded-[24px]"
+                  >
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[color:var(--solarys-gold)]" />
+                    <p className="text-sm leading-6 text-[color:var(--solarys-ink)]/74">{pillar}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-[1.08fr_0.92fr]">
+              <div className="relative overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
+                <Image
+                  src="/projects/demo-1.jpg"
+                  alt="Instalación solar a escala industrial"
+                  width={900}
+                  height={1100}
+                  className="h-[320px] w-full object-cover sm:h-[420px] md:h-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--solarys-deep)]/78 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-white sm:p-7">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-cyan-100/82 sm:text-xs sm:tracking-[0.3em]">
+                    Soluciones con presencia
+                  </p>
+                  <p className="mt-2 text-2xl sm:text-3xl">La energía también se vende con imagen.</p>
+                </div>
+              </div>
+
+              <div className="grid gap-5">
+                <div className="lux-card rounded-[26px] p-5 sm:rounded-[30px] sm:p-6">
+                  <SunMedium className="h-7 w-7 text-[color:var(--solarys-gold)]" />
+                  <p className="mt-4 text-2xl text-[color:var(--solarys-deep)] sm:mt-5 sm:text-3xl">
+                    Una marca más refinada
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-[color:var(--solarys-ink)]/72">
+                    Menos bloques de texto, más atmósfera visual y mejores puntos de entrada
+                    para convertir.
+                  </p>
+                </div>
+
+                <div className="overflow-hidden rounded-[26px] border border-white/70 shadow-[0_24px_70px_rgba(36,59,113,0.14)] sm:rounded-[30px]">
+                  <Image
+                    src="/projects/demo-2.jpg"
+                    alt="Proyecto de bombeo solar"
+                    width={500}
+                    height={500}
+                    className="h-[220px] w-full object-cover sm:h-[260px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Servicios />
+
+      <section id="impacto" className="pt-16 sm:pt-20 lg:pt-24">
+        <div className="section-shell">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.98fr]">
+            <div className="rounded-[30px] bg-[linear-gradient(135deg,#243b71_0%,#2d4b8e_48%,#47c3cb_100%)] p-6 text-white shadow-[0_28px_80px_rgba(36,59,113,0.24)] sm:rounded-[38px] sm:p-8 md:p-10">
+              <p className="text-sm font-bold uppercase tracking-[0.34em] text-cyan-100/80">
+                Manifiesto de marca
+              </p>
+              <h2 className="mt-5 max-w-2xl text-4xl text-white sm:text-5xl">
+                No vendemos paneles. Diseñamos confianza, rendimiento y presencia.
+              </h2>
+              <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:mt-6 sm:text-lg sm:leading-8">
+                Cada solución debe producir energía, reducir fricción operativa y transmitir
+                profesionalismo. La web ahora acompaña esa promesa con un look más actual y
+                una composición mucho más memorable.
+              </p>
+
+              <div className="mt-8 grid gap-4 md:mt-10 md:grid-cols-2">
+                <div className="rounded-[22px] border border-white/12 bg-white/8 p-4 sm:rounded-[28px] sm:p-5">
+                  <Gauge className="h-7 w-7 text-[color:var(--solarys-gold-soft)]" />
+                  <p className="mt-4 text-lg font-semibold">Rendimiento con forma</p>
+                  <p className="mt-2 text-sm leading-6 text-white/70">
+                    La apariencia ya refleja el nivel técnico del servicio.
+                  </p>
+                </div>
+                <div className="rounded-[22px] border border-white/12 bg-white/8 p-4 sm:rounded-[28px] sm:p-5">
+                  <Headphones className="h-7 w-7 text-[color:var(--solarys-gold-soft)]" />
+                  <p className="mt-4 text-lg font-semibold">Soporte que se percibe sólido</p>
+                  <p className="mt-2 text-sm leading-6 text-white/70">
+                    Mensaje claro, contacto directo y tono corporativo consistente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-5">
+              <div className="overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
+                <Image
+                  src="/projects/demo-3.jpg"
+                  alt="Instalación solar sobre cubierta"
+                  width={900}
+                  height={700}
+                  className="h-[240px] w-full object-cover sm:h-[320px]"
+                />
+              </div>
+
+              <div className="lux-card rounded-[28px] p-6 sm:rounded-[34px] sm:p-8">
+                <span className="eyebrow">Cómo trabajamos</span>
+                <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
+                  Del primer mensaje a la puesta en marcha.
+                </h2>
+                <div className="mt-7 space-y-3 sm:mt-8 sm:space-y-4">
+                  {process.map((item, index) => (
+                    <div
+                      key={item}
+                      className="flex items-center gap-3 rounded-[20px] border border-[color:var(--solarys-deep)]/8 bg-white px-4 py-4 sm:gap-4 sm:rounded-[24px] sm:px-5"
+                    >
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[color:var(--solarys-deep)] text-sm font-bold text-white">
+                        0{index + 1}
+                      </div>
+                      <p className="text-sm font-semibold tracking-[0.04em] text-[color:var(--solarys-ink)]/78">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-16 sm:pt-20 lg:pt-24">
+        <div className="section-shell">
+          <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr]">
+            <div className="overflow-hidden rounded-[30px] shadow-[0_28px_80px_rgba(36,59,113,0.18)] sm:rounded-[38px]">
+              <Image
+                src="/projects/demo-2.jpg"
+                alt="Vista aérea de proyecto productivo con energía solar"
+                width={1000}
+                height={1200}
+                className="h-[300px] w-full object-cover sm:h-[440px] lg:h-full lg:min-h-[520px]"
+              />
+            </div>
+
+            <div className="lux-card rounded-[30px] p-6 sm:rounded-[38px] sm:p-8 md:p-10">
+              <span className="eyebrow">Respaldo y criterio</span>
+              <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
+                Una marca más visual también necesita socios sólidos.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-[color:var(--solarys-ink)]/74 sm:mt-6 sm:text-lg sm:leading-8">
+                Reforzamos la percepción de confianza mostrando el ecosistema tecnológico
+                que acompaña a SOLARYS. Esto suma credibilidad y evita que la página dependa
+                solo de texto y claims.
+              </p>
+
+              <div className="mt-7 grid gap-3 sm:mt-8 sm:gap-4 sm:grid-cols-3">
+                {partners.map((partner) => (
+                  <div
+                    key={partner.name}
+                    className="flex h-24 items-center justify-center rounded-[22px] border border-[color:var(--solarys-deep)]/10 bg-white px-4 shadow-sm sm:h-28 sm:rounded-[26px]"
+                  >
+                    <div className="relative h-14 w-28">
+                      <Image src={partner.logo} alt={partner.name} fill className="object-contain" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 rounded-[28px] bg-[color:var(--solarys-light)] px-6 py-6">
+                <div className="flex items-start gap-3">
+                  <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-[color:var(--solarys-gold)]" />
+                  <p className="text-base leading-7 text-[color:var(--solarys-ink)]/74">
+                    La mezcla correcta de video, fotografía, estructura y tono comercial hace
+                    que el sitio se sienta más completo, más profesional y bastante más atractivo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <RecursosTecnicos />
+      <ProyectosDestacados />
+
+      <section className="pb-10 pt-16 sm:pt-20 lg:pt-24">
+        <div className="section-shell">
+          <div className="overflow-hidden rounded-[30px] bg-[color:var(--solarys-deep)] px-6 py-8 text-white shadow-[0_32px_100px_rgba(36,59,113,0.26)] sm:rounded-[40px] sm:px-8 sm:py-10 md:px-12 md:py-14">
+            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-[0.34em] text-cyan-200/78">
+                  Cierre comercial
+                </p>
+                <h2 className="mt-5 max-w-3xl text-4xl text-white sm:text-5xl">
+                  SOLARYS ya proyecta una imagen más contemporánea, elegante y convincente.
+                </h2>
+                <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:mt-6 sm:text-lg sm:leading-8">
+                  Reordenamos la experiencia para que el usuario vea energía, calidad y
+                  confianza desde el primer scroll. Menos sensación de folleto, más presencia
+                  de marca y mejor narrativa de venta.
+                </p>
+              </div>
+
+              <div className="lux-card rounded-[28px] bg-white/95 p-6 text-[color:var(--solarys-ink)] sm:rounded-[34px] sm:p-7">
+                <p className="text-sm font-bold uppercase tracking-[0.3em] text-[color:var(--solarys-primary-deep)]">
+                  Contacto directo
+                </p>
+                <p className="mt-4 text-3xl text-[color:var(--solarys-deep)] sm:text-4xl">829-869-3002</p>
+                <p className="mt-3 text-sm leading-7 text-[color:var(--solarys-ink)]/72 sm:text-base">
+                  Solicita tu cotización y llevemos esta nueva imagen a una captación comercial
+                  más seria, moderna y visualmente poderosa.
+                </p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href="/contacto"
+                    className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)]"
+                  >
+                    Hablar con un asesor
+                  </Link>
+                  <a
+                    href="tel:8298693002"
+                    className="inline-flex items-center justify-center rounded-full border border-[color:var(--solarys-deep)]/12 px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)]"
+                  >
+                    Llamar ahora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
