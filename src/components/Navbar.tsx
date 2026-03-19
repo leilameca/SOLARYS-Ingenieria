@@ -17,29 +17,35 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[color:var(--solarys-deep)]/10 bg-white/88 backdrop-blur-xl">
-      <div className="section-shell">
-        <nav className="flex items-center justify-between gap-3 px-0 py-3 text-[color:var(--solarys-ink)] sm:px-1 md:px-0 md:py-4">
-          <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" onClick={() => setOpen(false)}>
-            <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-2xl bg-white shadow-lg shadow-cyan-100/60 ring-1 ring-cyan-100 sm:h-12 sm:w-12">
-              <Image
-                src={assetPath("/brand/logo.png")}
-                alt="SOLARYS Ingenieria"
-                fill
-                className="object-contain p-1.5"
-                priority
-              />
-            </div>
+   <header className="sticky top-0 z-50 border-b border-[color:var(--solarys-deep)]/10 bg-white/88 backdrop-blur-xl">
+  <div className="section-shell">
+    <nav className="flex items-center justify-between gap-3 px-0 py-3 text-[color:var(--solarys-ink)] sm:px-1 md:px-0 md:py-4">
+      
+      <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" onClick={() => setOpen(false)}>
+        
+        {/* 🔥 LOGO MEJORADO */}
+        <div className="relative h-12 w-12 shrink-0 sm:h-14 sm:w-14">
+          <Image
+            src={assetPath("/brand/logo.png")}
+            alt="SOLARYS Ingenieria"
+            fill
+            className="object-contain scale-110"
+            priority
+          />
+        </div>
 
-            <div className="min-w-0 leading-none">
-              <p className="truncate text-base font-bold tracking-[0.08em] text-[color:var(--solarys-deep)] sm:text-xl sm:tracking-[0.18em]">
-                SOLARYS
-              </p>
-              <p className="mt-1 truncate text-[9px] font-semibold uppercase tracking-[0.14em] text-[color:var(--solarys-gold)] sm:text-xs sm:tracking-[0.34em]">
-                Ingeniería
-              </p>
-            </div>
-          </Link>
+        {/* TEXTO */}
+        <div className="min-w-0 leading-none">
+          <p className="truncate text-base font-bold tracking-[0.08em] text-[color:var(--solarys-deep)] sm:text-xl sm:tracking-[0.18em]">
+            SOLARYS
+          </p>
+          <p className="mt-1 truncate text-[9px] font-semibold uppercase tracking-[0.14em] text-[color:var(--solarys-gold)] sm:text-xs sm:tracking-[0.34em]">
+            Ingeniería
+          </p>
+        </div>
+
+      </Link>
+
 
           <div className="hidden items-center gap-7 lg:flex">
             {navLinks.map((link) => (

@@ -14,10 +14,10 @@ const pillars = [
 ];
 
 const process = [
-  "Levantamiento y análisis técnico del proyecto.",
-  "Diseño de solución y propuesta comercial clara.",
-  "Instalación, puesta en marcha y acompañamiento.",
-  "Soporte y mantenimiento con respuesta confiable.",
+  "Evaluación técnica del proyecto y necesidades energéticas.",
+  "Diseño de solución personalizada y propuesta clara.",
+  "Instalación profesional y puesta en marcha del sistema.",
+  "Soporte técnico y mantenimiento para operación continua.",
 ];
 
 const partners = [
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="grid gap-8 lg:grid-cols-[0.94fr_1.06fr]">
             <div className="lux-card rounded-[30px] p-6 sm:rounded-[36px] sm:p-8 md:p-10">
-              <span className="eyebrow">Dirección visual</span>
+              <span className="eyebrow">Dirección técnica</span>
               <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
                 Ingeniería energética con enfoque en rendimiento real.
               </h2>
@@ -107,30 +107,29 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1fr_0.98fr]">
             <div className="rounded-[30px] bg-[linear-gradient(135deg,#243b71_0%,#2d4b8e_48%,#47c3cb_100%)] p-6 text-white shadow-[0_28px_80px_rgba(36,59,113,0.24)] sm:rounded-[38px] sm:p-8 md:p-10">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-100/80 sm:text-sm sm:tracking-[0.34em]">
-                Manifiesto de marca
+                Nuestro enfoque
               </p>
               <h2 className="mt-5 max-w-2xl text-4xl text-white sm:text-5xl">
-                No vendemos paneles. Diseñamos confianza, rendimiento y presencia.
+                No instalamos paneles.
+Diseñamos sistemas que garantizan resultados.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:mt-6 sm:text-lg sm:leading-8">
-                Cada solución debe producir energía, reducir fricción operativa y transmitir
-                profesionalismo. La web ahora acompaña esa promesa con un look más actual y
-                una composición mucho más memorable.
+               Cada proyecto está diseñado para generar ahorro, asegurar continuidad operativa y ofrecer un rendimiento confiable a largo plazo.
               </p>
 
               <div className="mt-8 grid gap-4 md:mt-10 md:grid-cols-2">
                 <div className="rounded-[22px] border border-white/12 bg-white/8 p-4 sm:rounded-[28px] sm:p-5">
                   <Gauge className="h-7 w-7 text-[color:var(--solarys-gold-soft)]" />
-                  <p className="mt-4 text-lg font-semibold">Rendimiento con forma</p>
+                  <p className="mt-4 text-lg font-semibold">Rendimiento garantizado</p>
                   <p className="mt-2 text-sm leading-6 text-white/70">
-                    La apariencia ya refleja el nivel técnico del servicio.
+                    Sistemas diseñados para operar de forma eficiente, estable y duradera.
                   </p>
                 </div>
                 <div className="rounded-[22px] border border-white/12 bg-white/8 p-4 sm:rounded-[28px] sm:p-5">
                   <Headphones className="h-7 w-7 text-[color:var(--solarys-gold-soft)]" />
-                  <p className="mt-4 text-lg font-semibold">Soporte que se percibe sólido</p>
+                  <p className="mt-4 text-lg font-semibold">Soporte técnico confiable</p>
                   <p className="mt-2 text-sm leading-6 text-white/70">
-                    Mensaje claro, contacto directo y tono corporativo consistente.
+                    Acompañamiento real antes, durante y después de cada instalación.
                   </p>
                 </div>
               </div>
@@ -139,7 +138,7 @@ export default function Home() {
             <div className="grid gap-5">
               <div className="overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
                 <Image
-                  src={assetPath("/projects/demo-3.jpg")}
+                  src={assetPath("/projects/demo-6.jpg")}
                   alt="Instalación solar sobre cubierta"
                   width={900}
                   height={700}
@@ -150,7 +149,7 @@ export default function Home() {
               <div className="lux-card rounded-[28px] p-6 sm:rounded-[34px] sm:p-8">
                 <span className="eyebrow">Cómo trabajamos</span>
                 <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
-                  Del primer mensaje a la puesta en marcha.
+                 Así trabajamos cada proyecto
                 </h2>
                 <div className="mt-7 space-y-3 sm:mt-8 sm:space-y-4">
                   {process.map((item, index) => (
@@ -178,7 +177,7 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr]">
             <div className="overflow-hidden rounded-[30px] shadow-[0_28px_80px_rgba(36,59,113,0.18)] sm:rounded-[38px]">
               <Image
-                src={assetPath("/projects/demo-2.jpg")}
+                src={assetPath("/projects/demo-7.webp")}
                 alt="Vista aérea de proyecto productivo con energía solar"
                 width={1000}
                 height={1200}
@@ -187,14 +186,12 @@ export default function Home() {
             </div>
 
             <div className="lux-card rounded-[30px] p-6 sm:rounded-[38px] sm:p-8 md:p-10">
-              <span className="eyebrow">Respaldo y criterio</span>
+              <span className="eyebrow">Tecnología y aliados estratégicos</span>
               <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
-                Una marca más visual también necesita socios sólidos.
+                Trabajamos con tecnología confiable y marcas reconocidas.
               </h2>
               <p className="mt-5 text-base leading-7 text-[color:var(--solarys-ink)]/74 sm:mt-6 sm:text-lg sm:leading-8">
-                Reforzamos la percepción de confianza mostrando el ecosistema tecnológico
-                que acompaña a SOLARYS. Esto suma credibilidad y evita que la página dependa
-                solo de texto y claims.
+                Integramos equipos y soluciones de fabricantes reconocidos para garantizar rendimiento, durabilidad y estabilidad en cada instalación.
               </p>
 
               <div className="mt-7 grid gap-3 sm:mt-8 sm:gap-4 sm:grid-cols-3">
@@ -214,8 +211,7 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-[color:var(--solarys-gold)]" />
                   <p className="text-base leading-7 text-[color:var(--solarys-ink)]/74">
-                    La mezcla correcta de video, fotografía, estructura y tono comercial hace
-                    que el sitio se sienta más completo, más profesional y bastante más atractivo.
+                    Trabajar con tecnología certificada nos permite ofrecer soluciones más confiables, eficientes y respaldadas por estándares de calidad internacional.
                   </p>
                 </div>
               </div>
@@ -233,15 +229,13 @@ export default function Home() {
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200/78 sm:text-sm sm:tracking-[0.34em]">
-                  Cierre comercial
+                  Nos vemos pronto!
                 </p>
                 <h2 className="mt-5 max-w-3xl text-4xl text-white sm:text-5xl">
-                  SOLARYS ya proyecta una imagen más contemporánea, elegante y convincente.
+                  Lleva tu proyecto energético a otro nivel.
                 </h2>
                 <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:mt-6 sm:text-lg sm:leading-8">
-                  Reordenamos la experiencia para que el usuario vea energía, calidad y
-                  confianza desde el primer scroll. Menos sensación de folleto, más presencia
-                  de marca y mejor narrativa de venta.
+                  Te ayudamos a diseñar, instalar y optimizar tu sistema con soluciones confiables y acompañamiento técnico real.
                 </p>
               </div>
 

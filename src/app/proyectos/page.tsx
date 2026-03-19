@@ -20,8 +20,7 @@ export default function ProyectosPage() {
               <span className="eyebrow">Portfolio tecnico</span>
               <h1 className="mt-6 text-6xl text-[color:var(--solarys-deep)]">Proyectos</h1>
               <p className="mt-5 text-lg leading-8 text-[color:var(--solarys-ink)]/72">
-                Rediseñamos esta pagina para que el portafolio se vea como una credencial
-                comercial seria: proyectos visibles, tipologia clara y una lectura mucho mas limpia.
+                Presentamos el portafolio como una evidencia real de ejecución: proyectos claros, bien estructurados y fáciles de evaluar.
               </p>
             </div>
 

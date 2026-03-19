@@ -3,20 +3,20 @@ import { ArrowRight } from "lucide-react";
 
 const recursos = [
   {
-    title: "Guia de sistemas on-grid, off-grid e hibridos",
-    desc: "Una presentacion simple de arquitecturas solares y escenarios de uso para operaciones comerciales e industriales.",
+    title: "Guía de sistemas solares: on-grid, off-grid e híbridos",
+    desc: "Explicación clara de cada sistema, sus ventajas y cuándo utilizar cada uno según tu necesidad.",
     href: "/solar",
     tag: "Solar",
   },
   {
-    title: "Guia tecnica de bombeo solar IP68",
-    desc: "Criterios para seleccionar bombas, controladores y diseno hidraulico con enfoque en confiabilidad de campo.",
+    title: "Guía técnica de bombeo solar",
+    desc: "Cómo seleccionar bombas, controladores y sistemas eficientes según caudal, altura y uso.",
     href: "/bombeo",
     tag: "Bombeo",
   },
   {
-    title: "ATS, capacitores y mantenimiento industrial",
-    desc: "Resumen ejecutivo de soluciones electromecanicas que protegen continuidad, eficiencia y estabilidad operativa.",
+    title: "Soluciones electromecánicas industriales",
+    desc: "Aplicaciones clave en ATS, bancos de capacitores y mantenimiento para operaciones continuas.",
     href: "/electromecanica",
     tag: "Electromecanica",
   },
@@ -31,11 +31,10 @@ export default function RecursosTecnicos() {
             <div className="max-w-3xl">
               <span className="eyebrow">Recursos tecnicos</span>
               <h2 className="mt-6 text-5xl text-[color:var(--solarys-deep)]">
-                Contenido que educa y tambien vende mejor.
+                Contenido técnico que informa y genera confianza.
               </h2>
               <p className="mt-5 text-lg leading-8 text-[color:var(--solarys-ink)]/72">
-                Replanteamos esta seccion como una biblioteca de confianza: clara, sobria
-                y conectada con las rutas de servicio del sitio.
+                Accede a guías claras y prácticas que te ayudan a entender nuestras soluciones y tomar mejores decisiones técnicas.
               </p>
             </div>
 

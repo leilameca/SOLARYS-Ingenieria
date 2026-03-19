@@ -5,9 +5,9 @@ import { assetPath } from "../lib/asset-path";
 
 const proyectos = [
   {
-    title: "Instalacion solar fotovoltaica industrial",
+    title: "Instalación solar fotovoltaica industrial",
     type: "Solar fotovoltaica",
-    location: "Republica Dominicana",
+    location: "República Dominicana",
     equipos: "Inversor Solis / estructura / protecciones",
     image: assetPath("/projects/demo-1.jpg"),
   },
@@ -16,14 +16,14 @@ const proyectos = [
     type: "Bombeo solar",
     location: "Zona rural, RD",
     equipos: "Bomba sumergible / controlador / IP68",
-    image: assetPath("/projects/demo-2.jpg"),
+    image: assetPath("/projects/demo-9.jpg"),
   },
   {
-    title: "Mantenimiento electromecanico industrial",
+    title: "Mantenimiento electromecánico industrial",
     type: "Electromecanica",
     location: "Nave industrial, RD",
     equipos: "Tableros / capacitores / ATS",
-    image: assetPath("/projects/demo-3.jpg"),
+    image: assetPath("/projects/image.png"),
   },
 ];
 
@@ -35,11 +35,10 @@ export default function ProyectosDestacados() {
           <div className="max-w-3xl">
             <span className="eyebrow">Proyectos destacados</span>
             <h2 className="mt-6 text-5xl text-[color:var(--solarys-deep)]">
-              Evidencia visual de una marca que ya se ve mas grande.
+              Proyectos  que respaldan nuestro trabajo.
             </h2>
             <p className="mt-5 text-lg leading-8 text-[color:var(--solarys-ink)]/72">
-              Esta seccion ahora comunica ejecucion real, no solo una galeria generica. Cada
-              tarjeta sube la percepcion de calidad del portafolio.
+              Cada proyecto refleja nuestra forma de trabajar: precisión técnica, instalación limpia y resultados confiables.
             </p>
           </div>
 

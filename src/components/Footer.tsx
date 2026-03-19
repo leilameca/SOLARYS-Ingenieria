@@ -27,11 +27,10 @@ export default function Footer() {
               </div>
             </div>
             <h2 className="max-w-xl text-3xl text-white sm:text-4xl">
-              Energía que transforma tu mundo con presencia corporativa y precisión técnica.
+              Soluciones energéticas diseñadas con precisión técnica y ejecutadas con estándares profesionales.
             </h2>
             <p className="max-w-xl text-sm leading-7 text-white/72 sm:text-base">
-              Diseñamos soluciones solares, sistemas de bombeo y respaldo electromecánico
-              con ejecución limpia, imagen premium y acompañamiento permanente.
+              Integramos sistemas solares, bombeo y soluciones electromecánicas con enfoque en rendimiento, estabilidad y soporte continuo.
             </p>
           </div>
 
@@ -74,7 +73,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} SOLARYS Ingeniería. Todos los derechos reservados.</p>
-          <p>Energía solar, bombeo solar y electromecánica con estándar premium.</p>
+          <p>Energía solar, bombeo y electromecánica con respaldo técnico real.</p>
         </div>
       </div>
     </footer>
