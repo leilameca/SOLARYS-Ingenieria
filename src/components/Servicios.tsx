@@ -44,7 +44,7 @@ export default function Servicios() {
 
           <Link
             href="/contacto"
-            className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-7 py-4 text-sm font-bold uppercase tracking-[0.18em] text-[color:var(--solarys-deep)] shadow-xl shadow-amber-200/60 hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-7 py-4 text-sm font-bold uppercase tracking-[0.18em] text-[color:var(--solarys-deep)] shadow-xl shadow-amber-200/60 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl active:scale-95"
           >
 Solicitar asesoría          </Link>
         </div>

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { assetPath } from "../lib/asset-path";
 
 const proyectos = [
@@ -44,7 +47,7 @@ export default function ProyectosDestacados() {
 
           <Link
             href="/proyectos"
-            className="inline-flex items-center gap-2 rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] shadow-lg shadow-cyan-100/60"
+            className="inline-flex items-center gap-2 rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] shadow-lg shadow-cyan-100/60 transition-all duration-300 hover:shadow-lg hover:border-[color:var(--solarys-deep)]/20 active:scale-95"
           >
             Ver portfolio
             <ArrowRight className="h-4 w-4" />
@@ -52,10 +55,24 @@ export default function ProyectosDestacados() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
-          {proyectos.map((p) => (
-            <article key={p.title} className="lux-card overflow-hidden rounded-[32px]">
-              <div className="relative h-56 w-full">
-                <Image src={p.image} alt={p.title} fill className="object-cover" />
+          {proyectos.map((p, i) => (
+            <motion.article 
+              key={p.title} 
+              className="lux-card overflow-hidden rounded-[32px]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            >
+              <div className="relative h-56 w-full overflow-hidden">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.5 }}
+                  className="h-full w-full"
+                >
+                  <Image src={p.image} alt={p.title} fill className="object-cover" />
+                </motion.div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--solarys-deep)]/75 via-transparent to-transparent" />
                 <span className="absolute left-5 top-5 rounded-full bg-white/88 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.24em] text-[color:var(--solarys-primary-deep)]">
                   {p.type}
@@ -75,7 +92,7 @@ export default function ProyectosDestacados() {
                   </p>
                 </div>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const recursos = [
   {
@@ -40,15 +43,23 @@ export default function RecursosTecnicos() {
 
             <Link
               href="/contacto"
-              className="inline-flex items-center justify-center rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] shadow-lg shadow-cyan-100/50"
+              className="inline-flex items-center justify-center rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] shadow-lg shadow-cyan-100/50 transition-all duration-300 hover:shadow-lg hover:border-[color:var(--solarys-deep)]/20 active:scale-95"
             >
               Consultar con un tecnico
             </Link>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
-            {recursos.map((r) => (
-              <article key={r.title} className="lux-card group rounded-[30px] p-7">
+            {recursos.map((r, i) => (
+              <motion.article 
+                key={r.title} 
+                className="lux-card group rounded-[30px] p-7"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-100px" }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              >
                 <span className="inline-flex rounded-full bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-[0.24em] text-[color:var(--solarys-primary-deep)] shadow-sm">
                   {r.tag}
                 </span>
@@ -63,7 +74,7 @@ export default function RecursosTecnicos() {
                   Ver recurso
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-              </article>
+              </motion.article>
             ))}
           </div>
         </div>

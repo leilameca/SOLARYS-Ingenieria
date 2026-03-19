@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -43,7 +44,13 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="rounded-[2rem] border border-slate-100 bg-white p-5 shadow-2xl shadow-slate-200/40 sm:rounded-[2.5rem] sm:p-8 md:p-10">
+    <motion.div 
+      className="rounded-[2rem] border border-slate-100 bg-white p-5 shadow-2xl shadow-slate-200/40 sm:rounded-[2.5rem] sm:p-8 md:p-10"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-100px" }}
+    >
       <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
         <div className="grid gap-5 md:grid-cols-2 md:gap-6">
           <div className="space-y-2">
@@ -108,7 +115,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={loading}
-          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-[#0F172A] py-4 text-xs font-black uppercase tracking-[0.16em] text-[#FACC15] shadow-xl shadow-slate-200 transition-all hover:bg-slate-800 disabled:opacity-60 sm:py-5 sm:text-sm sm:tracking-[0.2em]"
+          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-[#0F172A] py-4 text-xs font-black uppercase tracking-[0.16em] text-[#FACC15] shadow-xl shadow-slate-200 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-300 active:scale-95 disabled:opacity-60 sm:py-5 sm:text-sm sm:tracking-[0.2em]"
         >
           {loading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
@@ -122,19 +129,29 @@ export default function ContactForm() {
 
         {/* Mensajes de Estado */}
         {ok && (
-          <div className="animate-appearance-in flex items-center gap-3 rounded-xl border border-green-100 bg-green-50 p-4 text-green-700">
+          <motion.div 
+            className="animate-appearance-in flex items-center gap-3 rounded-xl border border-green-100 bg-green-50 p-4 text-green-700"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             <CheckCircle2 className="w-5 h-5 shrink-0" />
             <p className="text-sm font-bold">{ok}</p>
-          </div>
+          </motion.div>
         )}
 
         {error && (
-          <div className="flex items-center gap-3 p-4 rounded-xl bg-red-50 text-red-700 border border-red-100">
+          <motion.div 
+            className="flex items-center gap-3 p-4 rounded-xl bg-red-50 text-red-700 border border-red-100"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             <AlertCircle className="w-5 h-5 shrink-0" />
             <p className="text-sm font-bold">{error}</p>
-          </div>
+          </motion.div>
         )}
       </form>
-    </div>
+    </motion.div>
   );
 }

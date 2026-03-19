@@ -251,13 +251,13 @@ Diseñamos sistemas que garantizan resultados.
                 <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                   <Link
                     href="/contacto"
-                    className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)]"
+                    className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] transition-all duration-300 hover:shadow-lg hover:shadow-amber-200/50 hover:-translate-y-1 active:scale-95"
                   >
                     Hablar con un asesor
                   </Link>
                   <a
                     href="tel:8298693002"
-                    className="inline-flex items-center justify-center rounded-full border border-[color:var(--solarys-deep)]/12 px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)]"
+                    className="inline-flex items-center justify-center rounded-full border border-[color:var(--solarys-deep)]/12 px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--solarys-deep)] transition-all duration-300 hover:bg-white/10 hover:border-[color:var(--solarys-deep)]/20 active:scale-95"
                   >
                     Llamar ahora
                   </a>

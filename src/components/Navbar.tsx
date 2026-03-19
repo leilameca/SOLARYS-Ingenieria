@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, PhoneCall, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { assetPath } from "../lib/asset-path";
 
 const navLinks = [
@@ -15,9 +16,25 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-   <header className="sticky top-0 z-50 border-b border-[color:var(--solarys-deep)]/10 bg-white/88 backdrop-blur-xl">
+   <motion.header 
+     className="sticky top-0 z-50 border-b border-[color:var(--solarys-deep)]/10 backdrop-blur-xl"
+     animate={{
+       backgroundColor: scrolled ? "rgba(255, 255, 255, 0.95)" : "rgba(255, 255, 255, 0.88)",
+       boxShadow: scrolled ? "0 4px 20px rgba(36, 59, 113, 0.08)" : "0 0 0 rgba(36, 59, 113, 0)"
+     }}
+     transition={{ duration: 0.3, ease: "easeOut" }}
+   >
   <div className="section-shell">
     <nav className="flex items-center justify-between gap-3 px-0 py-3 text-[color:var(--solarys-ink)] sm:px-1 md:px-0 md:py-4">
       
@@ -62,7 +79,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 lg:flex">
             <a
               href="tel:8298693002"
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-4 py-2 text-sm font-semibold text-[color:var(--solarys-deep)] shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--solarys-deep)]/10 bg-white px-4 py-2 text-sm font-semibold text-[color:var(--solarys-deep)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[color:var(--solarys-deep)]/20"
             >
               <PhoneCall className="h-4 w-4 text-[color:var(--solarys-gold)]" />
               829-869-3002
@@ -70,7 +87,7 @@ export default function Navbar() {
 
             <Link
               href="/contacto"
-              className="inline-flex items-center rounded-full bg-[color:var(--solarys-gold)] px-5 py-3 text-sm font-bold text-[color:var(--solarys-deep)] shadow-lg shadow-amber-200/70 hover:-translate-y-0.5 hover:bg-[color:var(--solarys-gold-soft)]"
+              className="inline-flex items-center rounded-full bg-[color:var(--solarys-gold)] px-5 py-3 text-sm font-bold text-[color:var(--solarys-deep)] shadow-lg shadow-amber-200/70 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:bg-[color:var(--solarys-gold-soft)] active:scale-95"
             >
               Solicitar cotización
             </Link>
@@ -117,6 +134,6 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </header>
+    </motion.header>
   );
 }

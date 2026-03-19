@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { assetPath } from "../lib/asset-path";
 
 export default function Footer() {
@@ -39,18 +42,18 @@ export default function Footer() {
               Navegación
             </p>
             <div className="flex flex-col gap-3 text-white/75">
-              <Link href="/#identidad" className="hover:text-white">
-                Identidad
-              </Link>
-              <Link href="/#servicios" className="hover:text-white">
-                Servicios
-              </Link>
-              <Link href="/proyectos" className="hover:text-white">
-                Proyectos
-              </Link>
-              <Link href="/contacto" className="hover:text-white">
-                Contacto
-              </Link>
+              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>
+                <Link href="/#identidad" className="block hover:text-white transition-colors duration-300">Identidad</Link>
+              </motion.div>
+              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>
+                <Link href="/#servicios" className="block hover:text-white transition-colors duration-300">Servicios</Link>
+              </motion.div>
+              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>
+                <Link href="/proyectos" className="block hover:text-white transition-colors duration-300">Proyectos</Link>
+              </motion.div>
+              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>
+                <Link href="/contacto" className="block hover:text-white transition-colors duration-300">Contacto</Link>
+              </motion.div>
             </div>
           </div>
 
@@ -60,12 +63,8 @@ export default function Footer() {
             </p>
             <div className="space-y-3 text-white/75">
               <p>República Dominicana</p>
-              <a href="tel:8298693002" className="block hover:text-white">
-                829-869-3002
-              </a>
-              <a href="mailto:contacto@solarysingenieria.com" className="block hover:text-white">
-                contacto@solarysingenieria.com
-              </a>
+              <motion.a href="tel:8298693002" className="block hover:text-white transition-colors duration-300" whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>829-869-3002</motion.a>
+              <motion.a href="mailto:contacto@solarysingenieria.com" className="block hover:text-white transition-colors duration-300" whileHover={{ x: 4 }} transition={{ duration: 0.3 }}>contacto@solarysingenieria.com</motion.a>
               <p>Soporte técnico 24/7 para operaciones críticas.</p>
             </div>
           </div>
