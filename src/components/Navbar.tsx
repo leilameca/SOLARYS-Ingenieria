@@ -32,10 +32,10 @@ export default function Navbar() {
             </div>
 
             <div className="min-w-0 leading-none">
-              <p className="truncate text-lg font-bold tracking-[0.12em] text-[color:var(--solarys-deep)] sm:text-xl sm:tracking-[0.18em]">
+              <p className="truncate text-base font-bold tracking-[0.08em] text-[color:var(--solarys-deep)] sm:text-xl sm:tracking-[0.18em]">
                 SOLARYS
               </p>
-              <p className="mt-1 truncate text-[10px] font-semibold uppercase tracking-[0.22em] text-[color:var(--solarys-gold)] sm:text-xs sm:tracking-[0.34em]">
+              <p className="mt-1 truncate text-[9px] font-semibold uppercase tracking-[0.14em] text-[color:var(--solarys-gold)] sm:text-xs sm:tracking-[0.34em]">
                 Ingeniería
               </p>
             </div>

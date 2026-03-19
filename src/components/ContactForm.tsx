@@ -58,7 +58,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <label className="ml-1 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 sm:text-xs sm:tracking-widest">Empresa / Institución</label>
+            <label className="ml-1 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 sm:text-xs sm:tracking-widest">Nombre / Empresa / Institución</label>
             <input
               name="empresa"
               type="text"
@@ -76,7 +76,7 @@ export default function ContactForm() {
               required
               type="tel"
               className="w-full rounded-2xl border-2 border-slate-50 bg-slate-50 px-4 py-3.5 text-sm font-medium outline-none focus:border-[#FACC15] focus:bg-white sm:px-5 sm:py-4"
-              placeholder="809-000-0000"
+              placeholder="829-869-3002"
             />
           </div>
 

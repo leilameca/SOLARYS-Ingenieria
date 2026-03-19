@@ -13,6 +13,7 @@
     "@sanity/image-url": "^2.0.3",
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.27.5",
+    "live-server": "^1.2.2",
     "lucide-react": "^0.562.0",
     "next": "^16.1.4",
     "next-sanity": "^12.0.14",
@@ -30,5 +31,18 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
     "typescript": "^5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leilameca/SOLARYS-Ingenieria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leilameca/SOLARYS-Ingenieria/issues"
+  },
+  "homepage": "https://github.com/leilameca/SOLARYS-Ingenieria#readme"
 }

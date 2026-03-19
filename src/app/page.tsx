@@ -8,9 +8,9 @@ import ProyectosDestacados from "../components/ProyectosDestacados";
 import { assetPath } from "../lib/asset-path";
 
 const pillars = [
-  "Una estética más limpia, moderna y ejecutiva.",
-  "Presencia visual respaldada por imágenes reales del trabajo.",
-  "Mensajes comerciales claros sin perder profundidad técnica.",
+  "Soluciones adaptadas a cada necesidad energética.",
+  "Instalaciones con estándares técnicos profesionales.",
+  "Sistemas diseñados para máxima eficiencia y durabilidad.",
 ];
 
 const process = [
@@ -37,12 +37,10 @@ export default function Home() {
             <div className="lux-card rounded-[30px] p-6 sm:rounded-[36px] sm:p-8 md:p-10">
               <span className="eyebrow">Dirección visual</span>
               <h2 className="mt-5 text-4xl text-[color:var(--solarys-deep)] sm:mt-6 sm:text-5xl">
-                Profesional, moderna y elegante, sin perder fuerza visual.
+                Ingeniería energética con enfoque en rendimiento real.
               </h2>
               <p className="mt-5 text-base leading-7 text-[color:var(--solarys-ink)]/74 sm:mt-6 sm:text-lg sm:leading-8">
-                La nueva portada deja atrás la sensación de flyer y entra en un lenguaje
-                más editorial: video hero, fotografía aplicada con intención y una marca
-                que comunica valor desde la composición.
+               En Solarys Ingeniería desarrollamos soluciones solares y sistemas electromecánicos diseñados para ofrecer estabilidad, eficiencia y continuidad operativa en cada proyecto.
               </p>
 
               <div className="mt-7 space-y-3 sm:mt-8 sm:space-y-4">
@@ -61,7 +59,7 @@ export default function Home() {
             <div className="grid gap-5 md:grid-cols-[1.08fr_0.92fr]">
               <div className="relative overflow-hidden rounded-[28px] shadow-[0_28px_80px_rgba(36,59,113,0.16)] sm:rounded-[34px]">
                 <Image
-                  src={assetPath("/projects/demo-1.jpg")}
+                  src={assetPath("/projects/demo-4.avif")}
                   alt="Instalación solar a escala industrial"
                   width={900}
                   height={1100}
@@ -72,7 +70,7 @@ export default function Home() {
                   <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-cyan-100/82 sm:text-xs sm:tracking-[0.3em]">
                     Soluciones con presencia
                   </p>
-                  <p className="mt-2 text-2xl sm:text-3xl">La energía también se vende con imagen.</p>
+                  <p className="mt-2 text-2xl sm:text-3xl">Energía diseñada para funcionar sin interrupciones.</p>
                 </div>
               </div>
 
@@ -80,17 +78,16 @@ export default function Home() {
                 <div className="lux-card rounded-[26px] p-5 sm:rounded-[30px] sm:p-6">
                   <SunMedium className="h-7 w-7 text-[color:var(--solarys-gold)]" />
                   <p className="mt-4 text-2xl text-[color:var(--solarys-deep)] sm:mt-5 sm:text-3xl">
-                    Una marca más refinada
+                    Soluciones confiables
                   </p>
                   <p className="mt-3 text-sm leading-6 text-[color:var(--solarys-ink)]/72">
-                    Menos bloques de texto, más atmósfera visual y mejores puntos de entrada
-                    para convertir.
+                    Implementamos sistemas solares y electromecánicos que garantizan rendimiento, ahorro energético y continuidad en cada operación.
                   </p>
                 </div>
 
                 <div className="overflow-hidden rounded-[26px] border border-white/70 shadow-[0_24px_70px_rgba(36,59,113,0.14)] sm:rounded-[30px]">
                   <Image
-                    src={assetPath("/projects/demo-2.jpg")}
+                    src={assetPath("/projects/demo-5.avif")}
                     alt="Proyecto de bombeo solar"
                     width={500}
                     height={500}
@@ -109,7 +106,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.98fr]">
             <div className="rounded-[30px] bg-[linear-gradient(135deg,#243b71_0%,#2d4b8e_48%,#47c3cb_100%)] p-6 text-white shadow-[0_28px_80px_rgba(36,59,113,0.24)] sm:rounded-[38px] sm:p-8 md:p-10">
-              <p className="text-sm font-bold uppercase tracking-[0.34em] text-cyan-100/80">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-100/80 sm:text-sm sm:tracking-[0.34em]">
                 Manifiesto de marca
               </p>
               <h2 className="mt-5 max-w-2xl text-4xl text-white sm:text-5xl">
@@ -235,7 +232,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-[30px] bg-[color:var(--solarys-deep)] px-6 py-8 text-white shadow-[0_32px_100px_rgba(36,59,113,0.26)] sm:rounded-[40px] sm:px-8 sm:py-10 md:px-12 md:py-14">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.34em] text-cyan-200/78">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200/78 sm:text-sm sm:tracking-[0.34em]">
                   Cierre comercial
                 </p>
                 <h2 className="mt-5 max-w-3xl text-4xl text-white sm:text-5xl">
@@ -249,7 +246,7 @@ export default function Home() {
               </div>
 
               <div className="lux-card rounded-[28px] bg-white/95 p-6 text-[color:var(--solarys-ink)] sm:rounded-[34px] sm:p-7">
-                <p className="text-sm font-bold uppercase tracking-[0.3em] text-[color:var(--solarys-primary-deep)]">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--solarys-primary-deep)] sm:text-sm sm:tracking-[0.3em]">
                   Contacto directo
                 </p>
                 <p className="mt-4 text-3xl text-[color:var(--solarys-deep)] sm:text-4xl">829-869-3002</p>

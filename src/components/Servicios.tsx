@@ -7,21 +7,21 @@ import { ArrowRight, Droplets, Sun, Zap } from "lucide-react";
 const servicios = [
   {
     title: "Energia solar fotovoltaica",
-    desc: "Sistemas on-grid, off-grid e hibridos para operaciones que necesitan ahorro, autonomia y una presentacion impecable.",
+    desc: "Sistemas on-grid, off-grid e híbridos diseñados para reducir costos, aumentar la independencia energética y garantizar estabilidad.",
     href: "/solar",
     badge: "Solar",
     icon: <Sun className="h-6 w-6" />,
   },
   {
     title: "Sistemas de bombeo solar",
-    desc: "Ingenieria de bombeo para fincas, agroindustria y entornos remotos con criterio de caudal, altura y continuidad.",
+    desc: "Sistemas de bombeo diseñados para garantizar suministro de agua en fincas, industrias y zonas remotas con máxima eficiencia.",
     href: "/bombeo",
     badge: "Bombeo",
     icon: <Droplets className="h-6 w-6" />,
   },
   {
     title: "Electromecanica aplicada",
-    desc: "ATS, tableros, bancos de capacitores y mantenimiento industrial para operaciones que no pueden parar.",
+    desc: "Tableros, bancos de capacitores y mantenimiento industrial para operaciones que no pueden parar.",
     href: "/electromecanica",
     badge: "Electromecanica",
     icon: <Zap className="h-6 w-6" />,
@@ -34,13 +34,11 @@ export default function Servicios() {
       <div className="section-shell">
         <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
-            <span className="eyebrow">Unidades de negocio</span>
+            
             <h2 className="mt-6 text-5xl text-[color:var(--solarys-deep)]">
-              Servicios con forma premium y fondo tecnico real.
-            </h2>
+             Soluciones energéticas diseñadas para rendimiento real.            </h2>
             <p className="mt-5 text-lg leading-8 text-[color:var(--solarys-ink)]/72">
-              Cada unidad se presenta como una solucion empresarial clara, con lenguaje
-              mas comercial, mas visual y mejor jerarquia de valor.
+              Desarrollamos soluciones solares y sistemas electromecánicos enfocados en ahorro, eficiencia y continuidad operativa para cada tipo de proyecto.
             </p>
           </div>
 
@@ -48,8 +46,7 @@ export default function Servicios() {
             href="/contacto"
             className="inline-flex items-center justify-center rounded-full bg-[color:var(--solarys-gold)] px-7 py-4 text-sm font-bold uppercase tracking-[0.18em] text-[color:var(--solarys-deep)] shadow-xl shadow-amber-200/60 hover:-translate-y-0.5"
           >
-            Solicitar asesoria
-          </Link>
+Solicitar asesoría          </Link>
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
