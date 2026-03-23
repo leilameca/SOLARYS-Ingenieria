@@ -38,7 +38,7 @@ export default function Navbar() {
   <div className="section-shell">
     <nav className="flex items-center justify-between gap-3 px-0 py-3 text-[color:var(--solarys-ink)] sm:px-1 md:px-0 md:py-4">
       
-      <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" onClick={() => setOpen(false)}>
+      <Link href="/#hero" className="flex min-w-0 items-center gap-2.5 sm:gap-3" onClick={() => setOpen(false)}>
         
         {/* 🔥 LOGO MEJORADO */}
         <div className="relative h-12 w-12 shrink-0 sm:h-14 sm:w-14">

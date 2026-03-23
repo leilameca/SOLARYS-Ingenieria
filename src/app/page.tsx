@@ -225,7 +225,7 @@ Diseñamos sistemas que garantizan resultados.
 
       <section className="pb-10 pt-16 sm:pt-20 lg:pt-24">
         <div className="section-shell">
-          <div className="overflow-hidden rounded-[30px] bg-[color:var(--solarys-deep)] px-6 py-8 text-white shadow-[0_32px_100px_rgba(36,59,113,0.26)] sm:rounded-[40px] sm:px-8 sm:py-10 md:px-12 md:py-14">
+          <div className="overflow-hidden rounded-[30px] bg-[#1ecfc9] px-6 py-8 text-white shadow-[0_32px_100px_rgba(30,207,201,0.28)] sm:rounded-[40px] sm:px-8 sm:py-10 md:px-12 md:py-14">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200/78 sm:text-sm sm:tracking-[0.34em]">

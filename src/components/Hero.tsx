@@ -31,7 +31,7 @@ const badges = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[color:var(--solarys-deep)]">
+    <section id="hero" className="relative min-h-screen overflow-hidden bg-[color:var(--solarys-deep)]">
       <div className="absolute inset-0">
         <video
           className="h-full w-full object-cover"
